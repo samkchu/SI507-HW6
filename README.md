@@ -83,7 +83,11 @@ It looks like two /'s are how to input comments in JavaScript - so for example: 
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
+For this assignment, it appears to get the JavaScript to run, you have to open it in a web browser - this executes not just the JavaScript, but also the HTML and CSS code.
+
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+
+In this code, two ways of displaying text to a user appears to be the innerhtml() "method" and alert() method. The innerhtml() method seems to display things in the browser output, whereas the alert() method displays things in a pop-up alert. innerhtml() would be useful for manipulating the actual page, whereas alert() would be useful to a certain type of event, triggered by a user action.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
