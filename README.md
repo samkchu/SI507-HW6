@@ -91,19 +91,35 @@ In this code, two ways of displaying text to a user appears to be the innerhtml(
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
+You should comment out line 12. To add an alert that contains today's date, we can use a similar syntax, but instead of the string `hello` we can insert the code `new Date()`.
+
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
+You can replace the string in `document.querySelector('h1').innerHTML = "A name";` with your own name. So, instead: `document.querySelector('h1').innerHTML = "Samantha Chu";`.
+
 * **What does the word `document` represent in this code? Explain briefly.**
+
+`document` seems to represent an object; more specifically, it seems to represent the overall webpage. When we use a method on this object, for example `querySelector()`, we are finding and selecting a query within the `document` object.
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
+It appears that the code is finding the elements in the webpage that are in a list format (i.e. tagged through the `<li>` HTML tag) and "counting" them using a `length()` method. It then assigns this count value to the object marked `#items`, which is displayed on the webpage.
+
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+
+It would be white.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
+There are "boxes" because in the CSS portion of the code, the CSS "tells" the webpage that any `<p>` (paragraph) tagged HTML should have a gray background color and a solid, colored border. We can edit this particular CSS code to make the paragraphs a different color, such as #496aed.
+
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
+I looked at the `copyFunction()` that acted upon the `University of Michigan` string - I noticed that the `copyFunction()` added additional text to the lowest portion of the webpage (marked by a `div` tag). In the `<li>` tag for `University of Michigan`, the syntax `oncopy` specified what should happen if a user uses the keyboard shortcut to copy this text, that is, the `copyFunction()` should be invoked.
+
+I wrote similar code for the `McGill University` by adding a second function and a second tag, which returns `0 Canada` near the bottom of the page if `McGill University` is acted upon by Ctrl+C.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -112,17 +128,23 @@ function handleClick(){
 	alert("hello");
 }
 ```
+
 **and**
 
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
+The first bit code defines a function called `handleClick`, which returns an alert text box displaying the string `hello` when invoked.
+
+The second bit of code says that when this button is clicked, invoke the `handleClick()` function.
+
+Together, if/when a user clicks on the button, it invokes the `handleClick()` function, which returns an alert text box.
 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
-
+See file.
 
 ### The next few questions address the `jquerylib_submit_example.html` file.
 
