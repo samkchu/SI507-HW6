@@ -25,7 +25,7 @@ This experience is *not in any way* about becoming an expert JavaScript programm
 
 ### Specifically
 
-Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give. 
+Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give.
 
 **To complete and submit this assignment, you should:**
 
@@ -46,7 +46,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 * In answering questions, assume all of the questions include a *explain briefly* note -- you do NOT have to, and should not, write extended paragraphs. Be as concise as you can and explain in your own words. Don't worry about "whether it's enough" -- just worry about conveying your understanding so you can read it later, or even give it to someone else, and the answers will help/make sense.
 
-* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours. 
+* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours.
 
 * **For grading:** we are grading on...
 	* Following the instructions
@@ -57,7 +57,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
+* Like this:
 * **Jackie Cohen (jczetta)**
 * Yea-Ree Chang (cyearee)
 * Ruchi Ookalkar (ruchido)
@@ -79,6 +79,8 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
+It looks like two /'s are how to input comments in JavaScript - so for example: `//this is a comment in JavaScript.`
+
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
@@ -89,7 +91,7 @@ Some JavaScript code
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
-* **What is happening in line 12 ( 
+* **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
