@@ -156,7 +156,7 @@ The error is in red because an invalid input results in a `<p>` object tagged wi
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 
-The line `var regex = /^[a-zA-Z]+$/` is helping create a test for the user input. It represents a valid input - that is, one word, with no spaces. I googled around for the meaning of "var regex" and found a blog post that helped describe Regular Expressions and their syntax. I learned that these "Regular Expressions" can help describe conditions/patterns for strings.
+The line `var regex = /^[a-zA-Z]+$/` is helping create a test for the user input. It represents a valid input - that is, one word, with no spaces. I googled around for the meaning of "var regex" and found a blog post that helped describe Regular Expressions and their syntax: "A Practical Guide to Regular Expressions (RegEx) in JavaScript" by Sukhjinder Arora (found here: https://blog.bitsrc.io/a-beginners-guide-to-regular-expressions-regex-in-javascript-9c58feb27eb4). I learned that these "Regular Expressions" can help describe conditions/patterns for strings.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
