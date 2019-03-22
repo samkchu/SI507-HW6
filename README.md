@@ -87,7 +87,7 @@ For this assignment, it appears to get the JavaScript to run, you have to open i
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
-In this code, two ways of displaying text to a user appears to be the innerhtml() "method" and alert() method. The innerhtml() method seems to display things in the browser output, whereas the alert() method displays things in a pop-up alert. innerhtml() would be useful for manipulating the actual page, whereas alert() would be useful to a certain type of event, triggered by a user action.
+In this code, two ways of displaying text to a user appears to be the `innerhtml()` "method" and `alert()` method. The `innerhtml()` method seems to display things in the browser output, whereas the `alert()` method displays things in a pop-up alert. `innerhtml()` would be useful for manipulating the actual page, whereas `alert()` would be useful to a certain type of event, triggered by a user action.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
@@ -152,11 +152,19 @@ See file.
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
+The error is in red because an invalid input results in a `<p>` object tagged with the class `"error"`. The CSS code says that this object should be colored red. On the contrary, valid inputs are blue because the resulting `<p>` object is tagged as class `"good"`, which the CSS code says to be colored blue.
+
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
+The line `var regex = /^[a-zA-Z]+$/` is helping create a test for the user input. It represents a valid input - that is, one word, with no spaces. I googled around for the meaning of "var regex" and found a blog post that helped describe Regular Expressions and their syntax. I learned that these "Regular Expressions" can help describe conditions/patterns for strings.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
+It seems that each "rule" of the conditional is contained by `{ }` brackets. Also, every line of code within these brackets must end with `;`.
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
+I think it refers to something to do with the behavior of how the string "fades" away. After testing different inputs, it looks like it controls the speed of the fading away.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -165,6 +173,7 @@ $(document).ready(function(){
     $("form").submit(function(event){
 ```
 
+I think it has something to do with telling the JavaScript code to run upon the the event of a user clicking submit. The initial display (that a user sees on the webpage) relies on HTML; however, for the "logic" of the webpage to work, the JavaScript conditional has to be triggered somehow. I think this is what that code is for.
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
