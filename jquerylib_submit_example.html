@@ -18,11 +18,15 @@ $(document).ready(function(){
         var regex = /^[a-zA-Z]+$/;
         var currentValue = $("#oneWord").val();
         if(regex.test(currentValue) == false){
-            $("#result").html('<p class="error">Not valid!</p>').show().fadeOut(10000);
+            $("#result").html('<p class="error">Not valid!</p>').show().fadeOut('20000');
             // Preventing form submission
             event.preventDefault();
+        } else if (currentValue == 'hello') {
+            $("#result").html('<p class="good">Hello to you to!</p>').show().fadeOut('20000');
+            event.preventDefault();
         } else {
-            $("#result").html('<p class="good">Nice!</p>').show().fadeOut(10000);
+            $("#result").html('<p class="good">Nice!</p>').show().fadeOut('20000');
+            event.preventDefault();
         }
     });
 });
@@ -35,6 +39,6 @@ $(document).ready(function(){
         <input type="text" name="first-name" id="oneWord">
         <input type="submit" value="Submit">
         <div id="result"></div>
-    </form>    
+    </form>
 </body>
-</html>                            
+</html>
